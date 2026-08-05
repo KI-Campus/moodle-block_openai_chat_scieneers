@@ -174,11 +174,26 @@ class completion {
         } 
         */
 		
+        // $payload = json_encode($curlbody);
+        // $header = [
+        //     'Content-Type: application/json',
+        //     'Accept: application/json', 
+        //     'Api-Key: xxx'
+        // ];
+
+
+        $apikey = get_config('block_openai_chat_scieneers', 'apikey');
+        if (empty($apikey)) {
+            // Log error or return a user-friendly message
+            echo get_string('apikeymissing', 'block_openai_chat_scieneers');
+            exit;
+        }
+
         $payload = json_encode($curlbody);
         $header = [
             'Content-Type: application/json',
             'Accept: application/json', 
-            'Api-Key: moodle-NuRwIByP*9W1Vj_Af)aDrFk+N1otSbMQ'
+            'Api-Key: ' . $apikey
         ];
 
         $curl = new \curl();

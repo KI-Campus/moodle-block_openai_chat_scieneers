@@ -61,3 +61,8 @@ $string['sourceoftruthreinforcement'] = ' The assistant has been trained to answ
 
 $string['error_unknown_info_source'] = "An unknown info source was specified in the block settings, please ask a site administrator to configure the block correctly.";
 $string['error_unknown_info_source_admin'] = 'Unknown info source. Set info source to one of the following classes: {$a}. Leave info source empty for direct access to chat gpt.';
+
+
+$string['apikey'] = 'API Key';
+$string['apikeydesc'] = 'Enter the API key used to authenticate with the Scieneers chatbot backend.';
+$string['apikeymissing'] = 'API key is not configured. Please contact the site administrator.';
