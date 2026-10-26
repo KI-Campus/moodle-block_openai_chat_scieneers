@@ -1,3 +1,8 @@
+# Deprecated - no longer in use
+
+Use this instead: https://github.com/KI-Campus/block_openai_chat_scieneers_port
+
+
 # KI Campus Annotation
 
 This ai chat plugin has been provided to the KI Campus by the Scieneers as a zip file. Hosting it internally for deployment and on the KI Campus Github for sharing
